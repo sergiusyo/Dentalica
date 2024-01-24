@@ -1,0 +1,1294 @@
+@font-face {
+    font-family: "Apercu Pro";
+    src: url("/fonts/ApercuPro-Regular.woff") format("woff");
+    src: url("/fonts/ApercuPro-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Apercu Pro";
+    src: url("/fonts/ApercuPro-Medium.woff") format("woff");
+    src: url("/fonts/ApercuPro-Medium.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Apercu Pro";
+    src: url("/fonts/ApercuPro-Bold.woff") format("woff");
+    src: url("/fonts/ApercuPro-Bold.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+/*GLOBAL*/
+html,
+body {
+    background-color: var(--background-color);
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+:root {
+    --black-color: #000000;
+    --background-color: #F5F7F7;
+    --white-color: #FFFFFF;
+    --header-links-color: #40505C;
+    --title-color: #40505C;
+    --our-doctors-link-color: #769FCD;
+    --hero-text-title: #546470;
+    --hero-button-color: #F1F9FF;
+    --footer-links-color: #769FCD;
+    --footer-tel-color: #40505C;
+    --footer-services-color: #3F4244;
+    --button-color: #769FCD;
+    --active-btn-color: #2380EB;
+}
+
+.list-reset {
+    list-style-type: none;
+    outline: none;
+    padding: 0;
+    margin: 0;
+}
+
+h1,
+h2,
+h2,
+h3,
+h4,
+span {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.btn {
+    padding: 0;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+img {
+    border: 0;
+    height: auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1297px;
+    width: 100%;
+}
+
+/*хэдер*/
+.header {
+    background-color: var(--white-color);
+    padding: 22px 0;
+}
+
+.header__contain {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    display: block;
+    width: 158px;
+    margin-right: 22px;
+    margin-bottom: -3px;
+}
+
+.header__nav {
+    position: absolute;
+    right: 33%;
+}
+
+.header__address {
+    position: absolute;
+    right: 67%;
+    font-family: 'Apercu Pro';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #546470;
+}
+
+/*меню навигации*/
+.header__list {
+    align-items: center;
+    gap: 20px;
+    margin-right: 20px;
+}
+
+.header__item-icon {
+    position: absolute;
+    bottom: 55%;
+}
+
+.header__link {
+    font-family: 'Apercu Pro';
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-transform: uppercase;
+    color: var(--header-links-color);
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+}
+
+.header__link:hover {
+    color: var(--active-btn-color);
+}
+
+.header__phone-icon {
+    display: none;
+}
+
+/*иконка бургера*/
+.burger {
+    position: absolute;
+    left: 68%;
+    top: 10%;
+    width: 36px;
+    height: 36px;
+    margin-right: 52px;
+    background-color: transparent;
+}
+
+.header__phone {
+    position: absolute;
+    right: 12%;
+    font-family: 'Apercu Pro';
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 0em;
+    margin-right: 20px;
+    text-align: right;
+    color: #40505C;
+}
+
+.header__button {
+    width: 159px;
+    padding: 13px 18px;
+    margin-left: 22px;
+    border-radius: 50px;
+    border: 2px;
+    font-family: 'Apercu Pro';
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: #628BB9;
+    transition: background-color .4s ease-in-out;
+}
+
+.header__button:hover {
+    background-color: var(--footer-services-color);
+    color: var(--white-color);
+}
+
+/*hero*/
+.hero__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 36px;
+}
+
+.hero__left-text {
+    width: 556px;
+}
+
+.hero__content {
+    display: flex;
+    justify-content: space-between;
+    width: 1308px;
+    border-radius: 30px;
+    background-image: linear-gradient(0deg, #b1c6ec, #c6dcdf),
+        linear-gradient(180deg, #B9D7EA 0%, rgba(185, 215, 234, 0) 100%);
+}
+
+.hero__content-title {
+    font-family: 'Apercu Pro';
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: var(--title-color);
+}
+
+.hero__content-text {
+    font-family: 'Apercu Pro';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    margin-top: 0;
+    text-align: left;
+    color: var(--hero-text-title);
+}
+
+/*кнопки*/
+.hero__content-btns {
+    margin-top: 40px;
+}
+
+.hero__content-bluebtn {
+    font-family: 'Apercu Pro';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    width: 219px;
+    padding: 17px 30px;
+    border-radius: 50px;
+    margin-right: 18px;
+    color: var(--white-color);
+    background-color: var(--button-color);
+    transition: background-color .4s ease-in-out;
+}
+
+.hero__content-bluebtn:hover {
+    background-color: #628BB9;
+}
+
+.hero__content-bluebtn:active {
+    background-color: var(--active-btn-color);
+}
+
+.hero__content-whitebtn {
+    font-family: 'Apercu Pro';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    padding: 17px 30px;
+    border-radius: 50px;
+    color: var(--button-color);
+    background-color: #F1F9FF;
+    transition: background-color .4s ease-in-out;
+}
+
+.hero__content-whitebtn:hover {
+    background-color: var(--white-color);
+    color: var(--button-color);
+}
+
+.hero__left-content {
+    width: 556px;
+    padding: 96px 0 116px 120px;
+}
+
+/*услуги*/
+.section-services {
+    padding-bottom: 110px;
+    padding-top: 100px;
+}
+
+.services__title {
+    font-family: 'Apercu Pro';
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 43px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--footer-tel-color);
+    margin-bottom: 40px;
+}
+
+.services__list {
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.services__list-item {
+    width: 306px;
+    margin-right: 24px;
+    margin-bottom: 40px;
+}
+
+.services__card-1 {
+    background-image: url('../img/1920/05_serc-icon1.svg');
+    background-position: 15px 34px;
+    background-size: 86px;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+}
+
+.services__descr {
+    color: #3F4244;
+    padding: 47px 0 30px 80px;
+    font-family: 'Apercu Pro';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+    letter-spacing: 0.18px;
+    text-transform: uppercase;
+}
+
+.services__card-1 {
+    background-image: url('../img/1920/05_serc-icon1.svg');
+    background-position: -9px 34px;
+    background-size: 86px;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+}
+
+.services__card-2 {
+    background-image: url('../img/1920/06_serc-icon2.svg');
+    background-position: -9px 34px;
+    background-size: 86px;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+}
+
+.services__descr--2 {
+    padding-top: 34px;
+}
+
+.services__card-3 {
+    background-image: url('../img/1920/07_serc-icon3.svg');
+    background-position: -9px 34px;
+    background-size: 86px;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+}
+
+.services__card-4 {
+    background-image: url('../img/1920/08_serc-icon4.svg');
+    background-position: -9px 34px;
+    background-size: 86px;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+}
+
+.services__card-5 {
+    background-image: url('../img/1920/09_serc-icon6.svg');
+    background-position: -9px 34px;
+    background-size: 86px;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+}
+
+.services__card-6 {
+    background-image: url('../img/1920/10_serc-icon7.svg');
+    background-position: -9px 34px;
+    background-size: 86px;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+}
+
+.services__card-7 {
+    background-image: url('../img/1920/11_serc-icon8.svg');
+    background-position: -9px 34px;
+    background-size: 86px;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+}
+
+.services__descr--7 {
+    padding-top: 46px;
+}
+
+.services__card-8 {
+    background-image: url('../img/1920/12_serc-icon9.svg');
+    background-position: -9px 34px;
+    background-size: 86px;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+}
+
+.services__list-item:nth-child(4n) {
+    margin-right: 0;
+}
+
+/*специалисты*/
+.section-doctors {
+    position: relative;
+    padding-bottom: 110px;
+}
+
+.doctors__title {
+    font-family: 'Apercu Pro';
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 43px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--footer-tel-color);
+    margin-bottom: 40px;
+}
+
+/*слайдер*/
+.slider__list {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.slick-prev {
+    position: absolute;
+    right: 19%;
+    top: 1%;
+    width: 42px;
+    height: 42px;
+    border-radius: 100%;
+    border: none;
+    outline: none;
+    background-image: url(../img/1920/slider_prev.svg);
+    cursor: pointer;
+}
+
+.slick-next {
+    position: absolute;
+    right: 16%;
+    top: 1%;
+    width: 42px;
+    height: 42px;
+    border-radius: 100%;
+    border: none;
+    outline: none;
+    background-image: url(../img/1920/slider_next.svg);
+    cursor: pointer;
+}
+
+.doctors__card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    height: 100%;
+}
+
+.doctors-card {
+    border-radius: 20px;
+    background: var(--white-color);
+}
+
+.doctors-card__body {
+    border: 1px solid red;
+    height: 532px;
+}
+
+.doctors-card__body:not(:last-child) {
+    margin-right: 24px;
+}
+
+.doctors-card__body-title {
+    color: var(--footer-services-color);
+    font-family: 'Apercu Pro';
+    font-size: 21px;
+    margin-bottom: 10px;
+}
+
+.card__top {
+    padding: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.doctors-card__img {
+    background: url(../img/1920/13_spec-card1.png), rgba(131, 154, 159, 0.10);
+}
+
+.doctors-card__img--2 {
+    background: url(../img/1920/14_spec-card2.png), rgba(131, 154, 159, 0.10);
+}
+
+.doctors-card__img--3 {
+    background: url(../img/1920/15_spec-card3.png), rgba(131, 154, 159, 0.10);
+}
+
+.doctors-card__img--4 {
+    background: url(../img/1920/16_spec-card4.png), rgb(158 159 179) 34.167px 11.907px / 79.805% 80.653% no-repeat;
+}
+
+.doctors-card__descr {
+    margin-top: 0;
+    margin-bottom: 29px;
+    font-family: 'Apercu Pro';
+    font-size: 16px;
+    color: var(--footer-services-color);
+}
+
+.doctors-card__text {
+    margin-bottom: 20px;
+    font-family: 'Apercu Pro';
+    font-size: 16px;
+    color: var(--footer-services-color);
+}
+
+.doctors-card__link {
+    color: var(--footer-links-color);
+    font-family: 'Apercu Pro';
+    font-size: 16px;
+    text-decoration: underline;
+    transition: all .4s ease-in-out;
+}
+
+.doctors__card-link:hover {
+    background-color: transparent;
+    color: var(--active-btn-color);
+}
+
+.doctors__span {
+    position: absolute;
+    right: 22%;
+    top: 3%;
+    font-family: 'Apercu Pro';
+    font-size: 16px;
+    color: var(--footer-links-color);
+    text-decoration: underline;
+    transition: all .4s ease-in-out;
+}
+
+.doctors__span:hover {
+    background-color: transparent;
+    color: var(--active-btn-color);
+}
+
+/*наши преимущества*/
+.container__wrapper {
+    padding: 71px 90px;
+    background: var(--white-color);
+    border-radius: 30px;
+    box-shadow: 0px 0px 16px 0px #839A9F1A;
+}
+
+.why__title {
+    margin-bottom: 40px;
+    text-align: center;
+    font-family: 'Apercu Pro';
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 43px;
+    letter-spacing: 0em;
+    color: var(--footer-tel-color);
+}
+
+.why__list-item {
+    width: 288px;
+}
+
+.why__list-item:not(:nth-child(3n)) {
+    margin-right: 106px;
+}
+
+.why__list-img {
+    margin-bottom: 13px;
+}
+
+.why__card-title {
+    margin-bottom: 12px;
+    font-family: 'Apercu Pro';
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--footer-services-color);
+}
+
+.why__card-descr {
+    font-family: 'Apercu Pro';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--footer-services-color);
+}
+
+/*отзывы*/
+.section-reviews {
+    padding-top: 110px;
+    padding-bottom: 110px;
+}
+
+.reviews__title {
+    margin-bottom: 40px;
+    font-family: 'Apercu Pro';
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 43px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--footer-tel-color);
+}
+
+.reviews__wrapper {
+    display: flex;
+}
+
+.left__block,
+.right__block {
+    position: relative;
+    width: 636px;
+    box-shadow: 0px 0px 16px 0px #839A9F1A;
+    background-color: var(--white-color);
+    border-radius: 20px;
+    padding: 50px;
+}
+
+.left__block {
+    margin-right: 24px;
+}
+
+.left__block-title,
+.right__block-title {
+    margin-bottom: 14px;
+    margin-right: 14px;
+    font-family: 'Apercu Pro';
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--footer-services-color);
+}
+
+.left__block-descr,
+.right__block-descr {
+    margin-bottom: 22px;
+    font-family: 'Apercu Pro';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--footer-services-color);
+}
+
+.left__block-img,
+.right__block-img {
+    margin-top: 22px;
+    margin-right: 16px;
+}
+
+.left__bottom-text {
+    position: absolute;
+    top: 76.5%;
+    font-family: 'Apercu Pro';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--footer-services-color);
+}
+
+.right__bottom-text {
+    position: absolute;
+    top: 76.5%;
+    font-family: 'Apercu Pro';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--footer-services-color);
+}
+
+.left__top-content,
+.right__top-content {
+    display: flex;
+    justify-content: flex-start;
+}
+
+/*запись к врачу*/
+.section-signup {
+    padding-bottom: 110px;
+}
+
+.signup__wrapper {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 308px 59px 97px;
+    background: #D6E6F2;
+    border-radius: 30px;
+    max-width: 1296px;
+    box-shadow: 0px 0px 16px 0px #839A9F1A;
+    background-image: linear-gradient(0deg, #b1c6ec, #c6dcdf),
+        linear-gradient(180deg, #B9D7EA 0%, rgba(185, 215, 234, 0) 100%);
+}
+
+.signup__wrapper-img {
+    position: absolute;
+    top: -4.8%;
+}
+
+/*правый блок*/
+.signup__right-block {
+    display: flex;
+    flex-direction: column;
+}
+
+.signup__title {
+    margin-bottom: 18px;
+    font-family: 'Apercu Pro';
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 43px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--footer-tel-color);
+}
+
+.signup__descr {
+    margin-bottom: 30px;
+    width: 360px;
+    font-family: 'Apercu Pro';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--hero-text-title);
+}
+
+/*форма заявки*/
+.signup__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.signup__input-name,
+.signup__input-tel {
+    width: 360px;
+    border-radius: 50px;
+    margin-bottom: 20px;
+    background-color: var(--white-color);
+    border: none;
+    outline: none;
+    font-family: 'Apercu Pro';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #848A8D;
+    padding: 17px 20px;
+}
+
+.signup__btn {
+    padding: 17px 30px;
+    width: 269px;
+    width: 100%;
+    border-radius: 50px;
+    background-color: var(--button-color);
+    font-family: 'Apercu Pro';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: var(--white-color);
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    margin-bottom: 10px;
+    transition: background-color .4s ease-in-out;
+}
+
+.signup__btn:hover {
+    background-color: #628BB9;
+}
+
+.signup__agree {
+    width: 360px;
+    font-family: 'Apercu Pro';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #5E6E7A;
+}
+
+/*о нас*/
+.section-about {
+    padding-bottom: 200px;
+}
+
+.about__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about__title {
+    font-family: 'Apercu Pro';
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 43px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--footer-tel-color);
+}
+
+.about__descr {
+    width: 526px;
+    font-family: 'Apercu Pro';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--footer-services-color);
+}
+
+/*секция Контакты, Яндекс карта*/
+/*КОНТАКТЫ, ЯНДЕКС-КАРТА*/
+.section-contacts {
+    position: sticky;
+    padding-bottom: 70px;
+}
+
+.contacts__content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    right: 0;
+    background: var(--white-color);
+    box-shadow: 0px 0px 16px 0px #839A9F1A;
+    border-radius: 20px;
+    max-width: 336px;
+    padding: 45px 50px 48px 40px;
+}
+
+.contacts__top {
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts__bottom {
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts__title {
+    margin-bottom: 26px;
+    font-family: 'Apercu Pro';
+    font-size: 34px;
+    font-weight: 500;
+    line-height: 41px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--header-links-color);
+}
+
+.contacts__phone {
+    margin-bottom: 18px;
+    margin-top: 0;
+    color: var(--footer-tel-color);
+    font-family: 'Apercu Pro';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.contacts__link {
+    font-family: 'Apercu Pro';
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    cursor: pointer;
+    text-align: left;
+    text-decoration: underline;
+    color: var(--our-doctors-link-color);
+    transition: all .4s ease-in-out;
+}
+
+.contacts__link:hover {
+    background-color: transparent;
+    color: var(--active-btn-color);
+}
+
+.contacts__address {
+    margin-bottom: 18px;
+    margin-top: 13px;
+    font-family: 'Apercu Pro';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--footer-services-color);
+}
+
+.contacts__duty {
+    margin-bottom: 18px;
+    font-family: 'Apercu Pro';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--footer-services-color);
+}
+
+/*соцсети*/
+.social__whatsapp,
+.social__viber,
+.social__telegram,
+.social__vk {
+    height: 58px;
+    cursor: pointer;
+}
+
+/*карта*/
+.yandex-map {
+    position: absolute;
+    width: 100%;
+    height: 540px;
+    top: -23%;
+}
+
+[class*="copyrights-pane"] {
+    display: none !important;
+}
+
+#zoom-in {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    top: 18px;
+    background: var(--white-color);
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    border-radius: 12px 12px 0 0;
+    cursor: pointer;
+    transition: .2s;
+    display: block;
+}
+
+
+#zoom-in::before {
+    position: absolute;
+    content: '';
+    background: var(--black-color);
+    height: 14px;
+    width: 2px;
+    top: 13px;
+    left: 19px;
+}
+
+#zoom-in::after {
+    position: absolute;
+    content: '';
+    background: var(--black-color);
+    width: 14px;
+    height: 2px;
+    left: 13px;
+    top: 19px;
+}
+
+#zoom-out {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background: var(--white-color);
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    border-radius: 0 0 12px 12px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+#zoom-out::after {
+    position: absolute;
+    content: "";
+    background: var(--black-color);
+    width: 14px;
+    height: 2px;
+    left: 13px;
+    top: 19px;
+}
+
+.ymaps-2-1-79-searchbox__normal-layout {
+    display: none;
+}
+
+.ymaps-2-1-79-controls__control {
+    display: none;
+}
+
+.ymaps-2-1-79-controls-pane {
+    display: none;
+}
+
+/*футер*/
+.footer {
+    background: var(--white-color);
+}
+
+.footer-container {
+    /* padding-left: 0;
+    padding-right: 0; */
+    margin: 0;
+}
+
+/*верхний блок*/
+.footer__top {
+    position: relative;
+    display: flex;
+    padding: 28px 0 28px 0;
+}
+
+.footer__logo {
+    margin-right: 48px;
+    position: absolute;
+    top: 34%;
+    left: 15.9%;
+}
+
+.footer__tel {
+    position: absolute;
+    right: 66%;
+    top: 43%;
+    font-family: 'Apercu Pro';
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--footer-tel-color);
+}
+
+.footer__contacts-socials {
+    position: relative;
+    display: flex;
+    right: -58%;
+    bottom: -3px;
+}
+
+.footer__btn {
+    position: absolute;
+    right: 19.7%;
+    font-family: 'Apercu Pro';
+    top: 35%;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: #628BB9;
+    height: 40px;
+    padding: 10px 18px;
+    border-radius: 50px;
+    border-color: var(--button-color);
+    border: 2px solid #628BB999;
+    cursor: pointer;
+    transition: background-color .4s ease-in-out;
+}
+
+.footer__btn:hover {
+    background-color: var(--button-color);
+    color: var(--white-color);
+}
+
+.footer__btn:active {
+    background-color: var(--active-btn-color);
+    color: var(--white-color);
+}
+
+/*нижний блок*/
+.footer__bottom {
+    position: relative;
+    padding: 22px 0 25px 0;
+    background: #D6E6F2;
+}
+
+.bottom-container {
+    width: 1920px;
+}
+
+.footer__menu-block {
+    padding-left: 307px;
+}
+
+.footer__menu-block::before {
+    position: relative;
+}
+
+.footer__menu-block::after {
+    position: absolute;
+    content: '';
+    bottom: 25%;
+    border: 1px solid #C2D2DE;
+    width: 1296px;
+}
+
+.footer__menu-title {
+    margin-bottom: 14px;
+    font-family: 'Apercu Pro';
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--footer-tel-color);
+}
+
+.footer__menu-list {
+    columns: 2;
+    margin-bottom: 44px;
+    margin-right: 134px;
+    width: 416px;
+}
+
+.footer__right-list {
+    width: 306px;
+    columns: 2;
+    margin-bottom: 44px;
+    margin-right: 250px;
+}
+
+.footer__menu-item {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.footer__menu-link {
+    font-family: 'Apercu Pro';
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--footer-services-color);
+    opacity: .8;
+    transition: background-color .4s ease-in-out;
+}
+
+.footer__menu-link:hover {
+    color: var(--footer-services-color);
+}
+
+.footer__license {
+    font-family: 'Apercu Pro';
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--footer-services-color);
+}
+
+.footer__policy {
+    font-family: 'Apercu Pro';
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    text-decoration: underline;
+    color: var(--footer-services-color);
+    transition: all .4s ease-in-out;
+}
+
+.footer__policy:hover {
+    color: var(--black-color);
+}
+
+.footer__right-block {
+    text-align: right;
+}
+
+.footer__right-email {
+    margin: 0;
+    text-align: right;
+    font-family: "Apercu Pro";
+    font-size: 15px;
+    color: var(--footer-services-color);
+}
+
+.footer__right-text {
+    margin: 0;
+    font-family: "Apercu Pro";
+    font-size: 14px;
+    color: var(--button-color);
+    text-decoration: underline;
+    text-align: right;
+    transition: all .4s ease-in-out;
+}
+
+.footer__right-text:hover {
+    background-color: transparent;
+    color: var(--active-btn-color);
+}
+
+.btn-up {
+    position: fixed;
+    background-color: #7bb0c6;
+    right: 40px;
+    bottom: 40px;
+    border-radius: 100%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    transition: background-color .3;
+}
+
+.btn-up:hover {
+    background-color: #d1c6c6;
+}
+
+.btn-up::before {
+    content: "";
+    width: 40px;
+    height: 40px;
+    background: transparent no-repeat center center;
+    background-size: 100% 100%;
+    border-radius: 100%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23fff' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z'/%3E%3C/svg%3E");
+}
+
+.btn-up__hide {
+    display: none;
+}

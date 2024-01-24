@@ -1,0 +1,1049 @@
+@media (max-width: 1700px) {
+    .container {
+        padding: 0 40px;
+    }
+
+    /*хэдер*/
+    .header__contain {
+        position: relative;
+    }
+
+    .header__address {
+        position: absolute;
+        right: 68%;
+        width: 126px;
+        font-size: 14px;
+    }
+
+    .header__phone--icon {
+        position: absolute;
+        display: flex;
+        width: 36px;
+        height: 36px;
+        right: 11%;
+        padding: 6px;
+        border-radius: 50px;
+        border: 2px solid rgba(98, 139, 185, 0.60);
+        background: transparent;
+    }
+
+    .header__nav {
+        display: none;
+    }
+
+    .header__phone {
+        position: absolute;
+        right: 12%;
+        top: 27%;
+    }
+
+    .burger {
+        position: absolute;
+        left: 65%;
+        top: 3%;
+    }
+
+    .header__phone--icon {
+        margin-right: 16px;
+    }
+
+    .header__button {
+        display: none;
+    }
+
+    .header__icons {
+        position: absolute;
+        top: 4%;
+        right: 5%;
+    }
+
+    /*запись к врачу*/
+    .signup__wrapper {
+        padding: 61px 80px 58px 80px;
+    }
+
+    /*о нас*/
+    .about__left-block {
+        margin-right: 70px;
+    }
+
+    .footer__container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .doctors-span {
+        right: 22%;
+    }
+
+    /*футер*/
+    .footer__top {
+        position: relative;
+    }
+
+    .footer__left-content {
+        padding: 28px 18px 28px 18px;
+    }
+
+    .footer__logo {
+        position: absolute;
+        top: 35%;
+        left: 2%;
+    }
+
+    .footer__tel {
+        position: absolute;
+        top: 43%;
+        right: 79%;
+    }
+
+    .footer__contacts-socials {
+        position: absolute;
+        left: 27%;
+        bottom: 20%;
+    }
+
+    .footer__btn {
+        position: absolute;
+        left: 40.8%;
+        top: 31%;
+        width: 159px;
+        font-size: 14px;
+    }
+
+    .footer__menu-block {
+        padding-left: 57px;
+    }
+
+    .footer__menu-list {
+        margin-right: 50px;
+    }
+
+    .footer__right-list {
+        margin-right: -18px;
+    }
+
+    .btn-up {
+        right: 15px;
+        bottom: 15px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        padding: 0 24px;
+        margin: 0 auto;
+    }
+
+    /*хэдер*/
+    .header {
+        background-color: #f5f5f5;
+    }
+
+    .header__address {
+        position: absolute;
+        right: 57%;
+        width: 126px;
+        font-size: 14px;
+    }
+
+    .header__contain {
+        position: relative;
+    }
+
+    .header__phone-icon {
+        position: absolute;
+        display: flex;
+        width: 36px;
+        height: 36px;
+        right: 11%;
+        padding: 6px;
+        border-radius: 50px;
+        border: 2px solid rgba(98, 139, 185, 0.60);
+        background: transparent;
+    }
+
+    .header__nav {
+        display: none;
+    }
+
+    .header__phone {
+        position: absolute;
+        right: 13%;
+        top: 28%;
+    }
+
+    .header__icons {
+        position: absolute;
+        right: 6%;
+        top: 2%;
+    }
+
+    .burger {
+        position: absolute;
+        right: -2%;
+    }
+
+    .header__button {
+        display: none;
+    }
+
+    /*hero*/
+    .hero__content {
+        background-image: url(../img/768/hero_img.png),
+            linear-gradient(0deg, #b1c6ec, #c6dcdf),
+            linear-gradient(180deg, #B9D7EA 0%, rgba(185, 215, 234, 0) 100%);
+        background-repeat: no-repeat;
+        background-position: right bottom;
+    }
+
+    .hero__left-content {
+        padding: 76px 60px;
+    }
+
+    .hero__content-title {
+        font-size: 35px;
+    }
+
+    .hero__right-img {
+        display: none;
+    }
+
+    /*услуги*/
+    .section-services {
+        padding-bottom: 83px;
+    }
+
+    .services__list-item {
+        width: 224px;
+        margin-bottom: 34px;
+        margin-right: 16px;
+    }
+
+    .services__descr {
+        font-size: 16px;
+    }
+
+    .services__descr--1 {
+        padding-left: 80px;
+    }
+
+    .services__descr--2 {
+        padding-left: 80px;
+    }
+
+    .services__card-5 {
+        margin-right: 32px;
+    }
+
+    .services__card-4 {
+        margin-right: 30px;
+    }
+
+    .services__card-5 {
+        background-position: 20px 34px;
+    }
+
+    .services__descr--5 {
+        padding-left: 110px;
+    }
+
+    /*специалисты*/
+    .section-doctors {
+        padding-bottom: 70px;
+    }
+
+    .doctors__title {
+        font-size: 30px;
+    }
+
+    .doctors-card__body-title {
+        font-size: 18px;
+    }
+
+    .doctors-card__body-top {
+        padding: 14px 16px 30px 16px;
+    }
+
+    .card--img {
+        background-image: url(../img/768/doctor_1.png);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    /*наши преимущества*/
+    .container__wrapper {
+        padding: 60px 25px 80px 41px;
+    }
+
+    .why__title {
+        font-size: 30px;
+    }
+
+    .why__list {
+        display: flex;
+        flex-wrap: wrap;
+        width: 720px;
+    }
+
+    .why__list-item {
+        margin-bottom: 40px;
+        width: 273px;
+    }
+
+    .why__list-item:not(:nth-child(2)) {
+        margin-right: 68px;
+    }
+
+    .why__list-card {
+        max-width: 288px;
+    }
+
+    /*отзывы*/
+    .section-reviews {
+        padding-top: 70px;
+        padding-bottom: 148px;
+    }
+
+    .reviews__title {
+        width: 248px;
+        font-size: 30px;
+    }
+
+    .right__block {
+        display: none;
+    }
+
+    .reviews__wrapper {
+        position: relative;
+    }
+
+    .left__block {
+        padding: 30px 40px 30px 40px;
+        width: 100%;
+    }
+
+    .left__block-stars {
+        position: absolute;
+        right: 57%;
+        bottom: 81%;
+    }
+
+    .left__bottom-text {
+        top: 80%;
+    }
+
+    /*запись к врачу*/
+    .section-signup {
+        padding-bottom: 70px;
+    }
+
+    .signup__wrapper {
+        position: relative;
+        padding: 60px 50px 60px 0;
+        background: #D6E6F2;
+    }
+
+    .signup__wrapper-img {
+        position: absolute;
+        top: 22.2%;
+        width: 310px;
+        left: -2.3%;
+    }
+
+    /*правый блок*/
+    .signup__title {
+        margin-bottom: 16px;
+        font-size: 36px;
+    }
+
+    /*о нас*/
+    .section-about {
+        padding-bottom: 70px;
+    }
+
+    .about__wrapper {
+        max-width: 720px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about__img {
+        width: 100%;
+        border-radius: 20px;
+        background: url(../img/768/kandinsky-download-1693915194520\ 1.png), lightgray 50% / cover no-repeat;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .about__right-block {
+        position: relative;
+    }
+
+    .about__title {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+
+    .about__descr {
+        width: 720px;
+    }
+
+    .about__text {
+        width: 720px;
+    }
+
+    /*контакты*/
+    .section-contacts {
+        padding-top: 70px;
+    }
+
+    .contacts-container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .contacts__title {
+        font-size: 30px;
+    }
+
+    .contacts__content {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        border-radius: inherit;
+        top: -76px;
+        max-width: 100%;
+        padding: 60px 23px 31px 24px;
+    }
+
+    .contacts__top,
+    .contacts__bottom {
+        display: flex;
+        flex-direction: column;
+        margin-right: 45px;
+    }
+
+    .contacts__bottom {
+        position: relative;
+        width: 246px;
+        margin-right: 0;
+    }
+
+    .contacts__address {
+        position: absolute;
+        bottom: 22%;
+        left: 0;
+        margin-bottom: 10px;
+    }
+
+    .contacts__duty {
+        position: absolute;
+        bottom: 11%;
+        left: 0;
+        margin: 0;
+    }
+
+    .contacts__socials {
+        position: absolute;
+        right: 3%;
+        top: 53%;
+    }
+
+    .yandex-map {
+        top: 35%;
+    }
+
+    /*футер*/
+    .footer {
+        padding-top: 295px;
+    }
+
+    .footer-container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    /*верхний блок*/
+    .footer__top {
+        background-color: white;
+        padding: 18px 18px 18px 18px;
+    }
+
+    .footer__logo {
+        position: absolute;
+        top: 32%;
+        left: 1%;
+        width: 162px;
+        margin-right: 24px;
+    }
+
+    .footer__tel {
+        position: absolute;
+        left: 10.5%;
+    }
+
+    .footer__btn {
+        position: absolute;
+        left: 31%;
+        top: 27%;
+        width: 155px;
+        font-size: 14px;
+    }
+
+    .footer__contacts-socials {
+        position: absolute;
+        left: 19%;
+        top: 20%;
+    }
+
+    /*нижний блок*/
+    .footer__menu-block::after {
+        bottom: 12%;
+        width: 720px;
+    }
+
+    .footer__menu-list {
+        columns: 1;
+        width: 224px;
+        margin-bottom: 32px;
+        margin-right: 50px;
+    }
+
+    .footer__menu-item:not(:last-child) {
+        margin-bottom: 17px;
+    }
+
+    .footer__policy {
+        position: absolute;
+        bottom: 6%;
+    }
+
+    .footer__right-list {
+        width: 156px;
+        columns: 1;
+        margin-bottom: 28px;
+        margin-right: 130px;
+    }
+
+    .footer__license {
+        position: absolute;
+        bottom: 6%;
+    }
+}
+
+@media (max-width: 740px) {
+
+    /*хэдер*/
+    .header {
+        height: 56px;
+        padding: 20px;
+    }
+
+    .header__logo {
+        position: absolute;
+        left: -8%;
+        bottom: -24px;
+        margin-right: 0;
+    }
+
+    .header__logo-pic {
+        width: 124px;
+    }
+
+    .header__address {
+        display: none;
+    }
+
+    .header__phone {
+        margin: 0;
+        position: absolute;
+        right: 25%;
+        top: -1px;
+        font-size: 15px;
+    }
+
+    .header__icons {
+        top: -10px;
+        right: 3%;
+    }
+
+    .header__phone-icon {
+        right: -10px;
+    }
+
+    /*hero*/
+    .section-hero {
+        padding-bottom: 60px;
+    }
+
+    .hero__container {
+        padding: 0 26px 0 20px;
+    }
+
+    .hero__content {
+        width: 374px;
+    }
+
+    .hero__left-content {
+        padding: 40px 20px 82px 20px;
+    }
+
+    .hero__left-text {
+        width: 334px;
+    }
+
+    .hero__content-title {
+        font-size: 24px;
+        margin-bottom: 10px;
+        font-family: 'Apercu Pro';
+        font-weight: 500;
+        line-height: 29px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+
+    .hero__content-text {
+        margin-bottom: 20px;
+        font-size: 15px;
+        font-family: 'Apercu Pro';
+        font-weight: 400;
+        line-height: 23px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+
+    .hero__content-btns {
+        margin-top: 0;
+    }
+
+    .hero__content-bluebtn {
+        margin-bottom: 14px;
+    }
+
+    /*услуги*/
+    .section-services {
+        padding-top: 0;
+        padding-bottom: 60px;
+    }
+
+    .services__title {
+        margin-bottom: 30px;
+    }
+
+    .services__card-1,
+    .services__card-2,
+    .services__card-3,
+    .services__card-4,
+    .services__card-5,
+    .services__card-6,
+    .services__card-7,
+    .services__card-8 {
+        background-position: -9px 34px;
+    }
+
+    .services__card-1 {
+        background-image: url('../img/1920/05_serc-icon1.svg');
+    }
+
+    .services__card-2 {
+        background-image: url('../img/1920/06_serc-icon2.svg');
+    }
+
+    .services__list-item:not(:last-child) {
+        margin-bottom: 18px;
+        margin-right: 0;
+        width: 372px;
+        min-height: 105px;
+    }
+
+    .services__descr {
+        padding: 48px 0 30px 85px;
+    }
+
+    .services__descr--1 {
+        padding-left: 80px;
+        padding-top: 50px;
+    }
+
+    .services__descr--2 {
+        padding-left: 80px;
+    }
+
+
+    /*специалисты*/
+    .doctors__title {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+
+    .doctors__span {
+        right: 76%;
+        top: 6%;
+        font-family: 'Apercu Pro';
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 14px;
+        letter-spacing: 0.16px;
+        color: #769FCD;
+        text-decoration: underline;
+    }
+
+    .doctors__list {
+        margin-top: 25px;
+    }
+
+    .doctors-card {
+        min-height: 551px;
+    }
+
+    .doctors__item {
+        max-width: 374px;
+    }
+
+    /*наши преимущества*/
+    .why__container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .container__wrapper {
+        padding: 60px 25px 70px 25px;
+        border-radius: 0;
+    }
+
+    .why__title {
+        margin-bottom: 30px;
+        font-size: 28px;
+    }
+
+    .why__card-title {
+        margin-bottom: 8px;
+        font-family: 'Apercu Pro';
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 23px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+
+    .why__list {
+        width: 414px;
+    }
+
+    .why__list-item {
+        margin-bottom: 0;
+    }
+
+    .why__list-item:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    .why__list-item {
+        margin-bottom: 0;
+        margin-right: 0;
+    }
+
+    /*отзывы*/
+    .section-reviews {
+        padding-bottom: 70px;
+    }
+
+    .reviews__container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .reviews__title {
+        margin-bottom: 24px;
+        width: 374px;
+        font-size: 28px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .left__block {
+        border-radius: 0;
+        margin: 0;
+        padding: 30px 20px 30px 20px;
+    }
+
+    .left__block-descr {
+        width: 103%;
+        display: block;
+    }
+
+    .left__block-stars {
+        position: absolute;
+        right: 32%;
+        bottom: 85%;
+    }
+
+    .left__bottom-text {
+        top: 85%;
+    }
+
+    /*запись к врачу*/
+    .section-signup {
+        padding-bottom: 60px;
+    }
+
+    .signup__container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .signup__wrapper {
+        padding: 60px 22px 70px 22px;
+        border-radius: 0;
+    }
+
+    .signup__wrapper-img {
+        display: none;
+    }
+
+    .signup__title {
+        font-size: 34px;
+        margin-bottom: 14px;
+        text-align: center;
+    }
+
+    .signup__descr {
+        font-size: 15px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .signup__input-name,
+    .signup__input-tel {
+        width: 360px;
+        border-radius: 50px;
+        margin-bottom: 20px;
+    }
+
+    .signup__btn {
+        padding: 17px 30px;
+        width: 269px;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    /*о нас*/
+    .about__container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .about__title {
+        font-size: 28px;
+    }
+
+    .about__left-block {
+        width: 374px;
+        margin: 0px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .about__descr {
+        margin-bottom: 30px;
+        width: 374px;
+    }
+
+    .about__img--mobile {
+        background-image: url(../img/iPhone/kandinsky-download.png);
+        border-radius: 0;
+    }
+
+    /*контакты*/
+    .contacts-container {
+        height: 100%;
+    }
+
+    .contacts__title {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+
+    .contacts__content {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        border-radius: inherit;
+        top: -76px;
+        max-width: 100%;
+        height: 339px;
+        padding: 60px 23px 31px 24px;
+    }
+
+    .contacts__top {
+        margin: 0;
+        /* height: 339px; */
+    }
+
+    .contacts__top-content {
+        position: relative;
+    }
+
+    .contacts__phone {
+        position: absolute;
+        width: 246px;
+        top: -7px;
+    }
+
+    .contacts__link {
+        margin-bottom: 21px;
+        position: absolute;
+        top: 37px;
+    }
+
+    .contacts__bottom {
+        position: relative;
+    }
+
+    .contacts__address {
+        position: absolute;
+        bottom: 29%;
+        margin-bottom: 18px;
+        margin-top: 0;
+        left: -49%;
+        width: 246px;
+    }
+
+    .contacts__duty {
+        position: absolute;
+        bottom: 22%;
+        left: -49%;
+    }
+
+    .contacts__socials {
+        position: absolute;
+        top: 78%;
+        left: 3%;
+    }
+
+    .yandex-map {
+        height: 43%;
+    }
+
+    /*футер*/
+    .footer {
+        padding-top: 229px;
+        background-color: white;
+    }
+
+    .footer__top {
+        padding: 17px 20px 20px 20px;
+        width: 100%;
+        height: 143px;
+    }
+
+    .content {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        width: 414px;
+    }
+
+    .footer__left-content--mobile {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer__logo {
+        position: absolute;
+        top: 12%;
+        left: 5%;
+        margin-right: 0;
+        margin-bottom: 26px;
+    }
+
+    .footer__tel {
+        width: 135px;
+        position: absolute;
+        top: 55%;
+        left: 5%;
+    }
+
+    .footer__contacts-socials {
+        position: absolute;
+        left: 44%;
+        top: 45%;
+        height: 55px;
+    }
+
+    .footer__btn {
+        position: absolute;
+        top: 12%;
+        left: 57%;
+    }
+
+    .bottom-container {
+        width: 414px;
+        padding: 60px 20px 20px 20px;
+        height: 490px;
+    }
+
+    .footer__right-block {
+        position: absolute;
+        top: -11%;
+        display: flex;
+    }
+
+    .footer__menu-block {
+        position: relative;
+        display: block;
+        padding-left: 0;
+    }
+
+    .footer__menu-block::after {
+        bottom: -1%;
+        width: 374px;
+    }
+
+    .footer__menu-list {
+        width: 374px;
+        columns: 2;
+        margin-bottom: 29px;
+    }
+
+    .footer__menu-item:not(:last-child) {
+        margin-bottom: 10px;
+    }
+
+    .footer__menu {
+        width: 374px;
+        columns: 2;
+        margin-bottom: 29px;
+    }
+
+    .footer__right-text {
+        position: absolute;
+        right: -160%;
+    }
+
+    .footer__license {
+        position: absolute;
+        bottom: 0%;
+        right: 23%;
+    }
+
+    .footer__license {
+        position: absolute;
+        bottom: -12%;
+        right: 28%;
+    }
+
+    .footer__policy {
+        position: absolute;
+        left: 18%;
+        bottom: -22%;
+    }
+
+    .btn-up {
+        right: 15px;
+        bottom: 15px;
+    }
+}
